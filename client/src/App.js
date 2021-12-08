@@ -1,13 +1,14 @@
-import './App.css';
+import { Route, Switch } from 'react-router-dom';
+
 import 'antd/dist/antd.css';
-import LayoutComp from './Components/LayoutComp';
 
 function App() {
   return (
-    <div className="App">
-      <h1>blue acaive</h1>
-      <LayoutComp></LayoutComp>
-    </div>
+    <Switch>
+      <Route exact path="/"></Route>
+      <Route exact path="/login"></Route>
+      <Route exact path="/logout"></Route>
+    </Switch>
   );
 }
 
