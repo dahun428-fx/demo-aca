@@ -1,0 +1,1 @@
+export const MAIN_IMAGE = 'main_image';

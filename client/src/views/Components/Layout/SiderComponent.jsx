@@ -22,14 +22,13 @@ function SiderComponent(){
     }
 
     return (
-
         <Sider collapsible collapsed={Collapsed} onCollapse={onCollapse}>
             <div className="logo" />
             <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline">
                 <Menu.Item key="1" icon={<PieChartOutlined />}>
-                Option 1
+                Gallery
                 </Menu.Item>
-                <Menu.Item key="2" icon={<DesktopOutlined />}>
+                {/* <Menu.Item key="2" icon={<DesktopOutlined />}>
                 Option 2
                 </Menu.Item>
                 <SubMenu key="sub1" icon={<UserOutlined />} title="User">
@@ -43,7 +42,7 @@ function SiderComponent(){
                 </SubMenu>
                 <Menu.Item key="9" icon={<FileOutlined />}>
                 Files
-                </Menu.Item>
+                </Menu.Item> */}
             </Menu>
         </Sider>
     );

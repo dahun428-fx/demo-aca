@@ -8,10 +8,11 @@ import {
   UserOutlined,
 } from '@ant-design/icons';
 import { useEffect, useState } from 'react';
-import SiderComponent from './Components/Layout/SiderComponent';
-import HeaderComponent from './Components/Layout/HeaderComponent';
-import ContentComponent from './Components/Layout/ContentComponet';
-import FooterComponent from './Components/Layout/FooterComponent';
+import SiderComponent from './views/Components/Layout/SiderComponent';
+import HeaderComponent from './views/Components/Layout/HeaderComponent';
+import ContentComponent from './views/Components/Layout/ContentComponet';
+import FooterComponent from './views/Components/Layout/FooterComponent';
+import MainPage from './views/Components/LandingPage/MainPage';
 
 const { Header, Content, Footer, Sider } = Layout;
 const { SubMenu } = Menu;
@@ -28,11 +29,13 @@ function App() {
 
   return (
     <Layout style={{ minHeight: '100vh' }}>
-      <SiderComponent />
-    <Layout className="site-layout">
       <HeaderComponent />
-      <ContentComponent />
-      <FooterComponent />
+    <Layout className="site-layout">
+      <SiderComponent />
+      <Layout>
+        <ContentComponent />
+        <FooterComponent />
+      </Layout>
     </Layout>
   </Layout>
   );
